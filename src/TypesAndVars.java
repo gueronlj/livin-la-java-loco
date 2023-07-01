@@ -1,9 +1,11 @@
 public class TypesAndVars {
-    public static void main(String[] args) {
-        int thing; // declaring;
-        
-        thing = 2;//initializing 
 
-        System.out.println(thing);
+    static String global = "everyone can use me"; //this is global simply because of where it is initialized
+    public static void main(String[] args) {
+        String local; // declaring;
+        
+        local = "this is scoped to this function";//initializing 
+
+        System.out.println(local);
     }
 }
